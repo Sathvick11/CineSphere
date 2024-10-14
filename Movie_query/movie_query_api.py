@@ -3,6 +3,7 @@ import json
 
 import streamlit as st
 
+API_KEY = st.secrets['API_KEY']
 API_URL = f'http://www.omdbapi.com/?apikey={API_KEY}&'
 
 def define_type(type:str = 'movie'):
